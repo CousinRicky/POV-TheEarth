@@ -1,13 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>TheEarth.pov</title>
+<meta charset="UTF-8">
+<title>TheEarth.pov | POV-Ray Object Collection</title>
 </head>
 
 <body>
 
-<h2>TheEarth</h2>
-This object comprises a simple scene file and a choice of 3 copyright free images of the earth from <a href="http://www.evl.uic.edu/pape/data/Earth/">http://www.evl.uic.edu/pape/data/Earth/</a>. The scene file maps an image onto a sphere and optionally adds clouds. 
-<a href="http://www.evl.uic.edu/pape/data/Earth/">http://www.evl.uic.edu/pape/data/Earth/</a> also contains higher resolution images than those incorporated in this object and various other earth images derived from different data sources. All of the images there are in a cylindrical (latitude/longitude) projection, so are suitable for mapping to a sphere in the same way. 
+<h2>TheEarth 1.1</h2>
+This object comprises a simple scene file and a choice of 3 copyright free images of the earth from <a href="http://www.evl.uic.edu/pape/data/Earth/">http://www.evl.uic.edu/pape/data/Earth/</a>. The scene file maps an image onto a sphere and optionally adds clouds.
+<a href="http://www.evl.uic.edu/pape/data/Earth/">http://www.evl.uic.edu/pape/data/Earth/</a> also contains higher resolution images than those incorporated in this object and various other earth images derived from different data sources. All of the images there are in a cylindrical (latitude/longitude) projection, and are suitable for <var>uv</var> mapping to a sphere.
 <p>
 
 
@@ -16,28 +18,50 @@ The following variables are set at the top of the sample scene file to facilitat
 
 <h3>TheEarth_CloudsOn</h3>
 Where 0=No and 1=Yes.
-<h3>TheEarth_Rotation</h3> 
-A 3D <x,y,z> vector in degrees.
+<h3>TheEarth_Rotation</h3>
+A 3D &lt;x,y,z> vector in degrees.
 <h3>TheEarth_SourceImage</h3>
-The 3 images included in the download are:    
+The 3 images included in the download are:
 <table>
-  <tr><td>theearth_bigearth.jpg   </td><td>'True' colour representation - high resolution</td></tr>
+  <tr><td>theearth_bigearth.jpg   </td><td>‘True’ colour representation - high resolution</td></tr>
   <tr><td>theearth_topography.jpg </td><td>Colours indicate Heights and Depths           </td></tr>
-  <tr><td>theearth_mapperwdb.jpg  </td><td>World DataBase Country markings               </td></tr>
+  <tr><td>theearth_mapperwdb.jpg  </td><td>World DataBase Country markings ca. 1990      </td></tr>
 </table>
 
 <h2>The Images and Sample Renders</h2>
-  
-<table align=center>
-  <tr><td><b>theearth_bigearth.jpg<b></td></tr>
+
+<table style="margin:auto">
+  <tr><td colspan="2"><b>theearth_bigearth.jpg</b></td></tr>
   <tr>
-    <td><a href="theearth_bigearth.jpg"><img src="theearth_bigearth_tn.jpg" height=240></a></td>
-    <td><a href="theearth.jpg"         ><img src="theearth_bigearth_pov.jpg"          ></a></td>
+    <td><a href="theearth_bigearth.jpg"><img src="theearth_bigearth_tn.jpg" height=240 alt="[‘True’ colour image map]"></a></td>
+    <td><a href="theearth.jpg"><img src="theearth_bigearth_pov.jpg" alt="[‘True’ colour render]"></a></td>
   </tr>
-  <tr><td><b>theearth_topography.jpg<b></td></tr>
-  <tr><td><img src="theearth_topography.jpg" height=240></td><td><img src="theearth_topography_pov.jpg"></td></tr>
-  <tr><td><b>theearth_mapperwdb.jpg<b></td></tr>
-  <tr><td><img src="theearth_mapperwdb.jpg"  height=240> </td><td><img src="theearth_mapperwdb_pov.jpg""></td></tr>
+  <tr><td colspan="2"><b>theearth_topography.jpg</b></td></tr>
+  <tr>
+    <td><img src="theearth_topography.jpg" alt="[Topographical image map]" height=240></td>
+    <td><img src="theearth_topography_pov.jpg" alt="[Topographical  render]"></td>
+  </tr>
+  <tr><td colspan="2"><b>theearth_mapperwdb.jpg</b></td></tr>
+  <tr>
+    <td><img src="theearth_mapperwdb.jpg" alt="[Image map with WDB markings]" height=240></td>
+    <td><img src="theearth_mapperwdb_pov.jpg" alt="[Render with WDB markings]"></td>
+  </tr>
 </table>
+
+<h2>Why <var>uv</var> Mapping?</h2>
+<p>Version 1.0 recommended cylindrical mapping, to match the projection of the image map. That was incorrect, as can be seen in this illustration:
+
+<p style="text-align:center"><img src="theearth_maptype.png" alt="[Diagram of cylindrical and uv mappings, respectively, onto a sphere]">
+
+<p>Compare the renders on this page with a <a href="https://github.com/CousinRicky/POV-TheEarth/blob/bfd8908e2657a56fabfc654b2c6a173cc675aa84/theearth_mapperwdb_pov.jpg">version 1.0 cylindrical render</a>, and check them against a physical globe if you get the opportunity.
+
+<h2 id="About">About TheEarth</h2>
+
+<address>
+ <p>The SDL code is copyright © 2005, 2007 Chris Bartlett and © 2023 Richard Callwood III. Some rights reserved. The image maps are public domain in the United States.
+ <p>This library is free software; you can redistribute it and/or modify it under the terms of the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html" target="_blank">GNU Lesser General Public License version 2.1</a> as published by the Free Software Foundation.
+ <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+</address>
+
 </body>
 </html>
