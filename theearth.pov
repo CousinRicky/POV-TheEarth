@@ -16,7 +16,7 @@
 // Typical render time 1 second
 // Radius is 0.5 POV-Ray units
 // Position is 0.5 POV-Ray units above the origin
-// The images included in the download come from http://www.evl.uic.edu/pape/data/Earth/ where
+// The images included in the download come from https://www.evl.uic.edu/pape/data/Earth/ where
 // there are higher resolution images along with alternative data representations.
 // They were created by Dave Pape, while a federal employee at NASA/GSFC and are copyright free.
 // These images are in a cylindrical mapping.
