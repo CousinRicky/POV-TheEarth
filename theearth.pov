@@ -6,12 +6,12 @@
 // Created by Chris Bartlett 07.02.2005
 // Updated 2007 by Chris Bartlett for inclusion in the POV-Ray Object Collection
 // Version 1.1 updated 2023-12-07 by Richard Callwood III:
-//   A #version is added.
-//   The transfer to the sphere is changed from cylindrical to uv mapping.
-//   The assumed_gamma is set, the finish ambients reduced accordingly, and the image maps gamma decoded.
-//   The control variables can be set externally.
-// Version 1.2 updated 2024-01-23 by Richard Callwood III:
-//   The clouds are rotated with the rest of the planet.
+//  - A #version is added.
+//  - The transfer to the sphere is changed from cylindrical to uv mapping.
+//  - The assumed_gamma is set, the finish ambients reduced accordingly, and the image maps gamma decoded.
+//  - The control variables can be set externally.
+// Version 1.2 updated 2024-01-26 by Richard Callwood III:
+//  - The clouds are rotated with the rest of the planet.
 // This file is licensed under the terms of the GNU-LGPL.
 // Please visit https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html for the text of the GNU-LGPL.
 // Source https://lib.povray.org/
