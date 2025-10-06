@@ -1,8 +1,8 @@
-
-// TheEarth.pov version 1.2
-// ------------------------
+// theearth.pov version 1.2a
+// -------------------------
 
 // Sample scene that maps an image of the earth onto a sphere
+//
 // Created by Chris Bartlett 07.02.2005
 // Updated 2007 by Chris Bartlett for inclusion in the POV-Ray Object Collection
 // Version 1.1 updated 2023-12-07 by Richard Callwood III:
@@ -12,12 +12,23 @@
 //  - The control variables can be set externally.
 // Version 1.2 updated 2024-01-26 by Richard Callwood III:
 //  - The clouds are rotated with the rest of the planet.
-// This file is licensed under the terms of the GNU-LGPL.
-// Please visit https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html for the text of the GNU-LGPL.
+// Version 1.2a updated 2025-10-06 by Richard Callwood III:
+//  - The license is set to version 3, as permitted by the LGPL when the original work does not specify a
+//    license version.
+//
+// This file is licensed under the terms of the GNU-LGPL
+// version 3 or (at your option) any later version. Please visit
+// https://www.gnu.org/licenses/lgpl-3.0.html for the text of the GNU-LGPL.
+//
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+//
 // Source https://lib.povray.org/
 // Typical render time 1 second
 // Radius is 0.5 POV-Ray units
 // Position is 0.5 POV-Ray units above the origin
+//
 // The images included in the download come from https://www.evl.uic.edu/pape/data/Earth/ where
 // there are higher resolution images along with alternative data representations.
 // They were created by Dave Pape, while a federal employee at NASA/GSFC and are copyright free.
